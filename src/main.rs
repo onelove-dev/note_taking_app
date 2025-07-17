@@ -163,7 +163,7 @@ fn get_next_id(filename: &str) -> u32 {
 
     reader
         .lines()
-        .filter(|line| line.as_ref().map_or(false, |l| l.starts_with("ID:")))
+        .filter(|line| line.as_ref().map_or(false, |l| l.starts_with("✅ ID:")))
         .count() as u32
         + 1
 }
